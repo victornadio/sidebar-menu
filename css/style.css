@@ -3,12 +3,14 @@
 
 /* VARIAVÉIS CSS   */
 :root{
+    /* ===== CORES ===== */
   --nav-width: 92px;
-  --first-color: #0c5df4;
+  --first-color: #ff1fc7;
   --bg-color: #12192C;
   --sub-color: #B6CEFC;
   --white-color: #FFF;
 
+  /* ===== TIPOGRAFIA ===== */
   --body-font: 'Poppins', sans-serif;
   --normal-font-size: 1rem;
   --small-font-size: .875rem;
@@ -100,6 +102,53 @@
 .nav__name{
   font-size: var(--small-font-size);
 }
+
+/* ===== EXPANDER MENU ===== */
+.expander{
+  width: calc(var(--nav-width) + 9.25rem);
+}
+
+/* ===== ADICIONANDO PADDING NO BODY ===== */
+.body-pd{
+  padding: 2rem 0 0 16rem;
+}
+
+/* ===== LINKs ATIVOS ===== */
+ .active{
+   background-color: var(--first-color);
+ }
+
+ /* ===== COLLAPSE ====== */
+.collapse{
+  grid-template-columns: 20px max-content 1fr;
+}
+.collapse__link{
+  justify-self: flex-end;
+  transition: .5s;
+}
+.collapse__menu{
+  display: none;
+  padding: .75rem 2.25rem;
+}
+.collapse__sublink{
+  color: var(--sub-color);
+  font-size: var(--small-font-size);
+}
+.collapse__sublink:hover{
+  color: var(--white-color);
+}
+
+/* ===== SHOW COLLAPSE ===== */
+.showCollapse{
+  display: block;
+}
+
+/* ===== ROTACIONAR O ICONE ===== */
+.rotate{
+  transform: rotate(180deg);
+  transition: .5s ;
+}
+
 
 
 
